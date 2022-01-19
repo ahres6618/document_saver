@@ -1,0 +1,220 @@
+/* start global */
+body {
+
+  font-family: sans-serif;
+  color: #999;
+  padding-bottom: 100px;
+}
+
+*,
+button {
+
+}
+
+label {
+  color: #311ae3;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 150px;
+  }
+}
+/* end global */
+nav.custom-navigation-bar {
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  width: 100%;
+  -webkit-box-shadow: 0 -1px 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 -1px 1rem rgba(0, 0, 0, 0.2);
+  padding: 1rem 0;
+}
+nav.custom-navigation-bar ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+nav.custom-navigation-bar ul a {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  nav.custom-navigation-bar ul {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav.custom-navigation-bar ul li {
+    width: 25%;
+  }
+  nav.custom-navigation-bar ul a {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav.custom-navigation-bar ul a i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+  }
+  nav.custom-navigation-bar ul a span {
+    display: block;
+    font-size: 0.7rem;
+  }
+}
+/* start button and links style */
+a {
+  text-decoration: none;
+}
+
+.bg-primary {
+  background-color: #311ae3 !important;
+}
+
+.btn-warning {
+  background-color: #ee9e29;
+  border-color: #ee9e29;
+}
+
+/* end button and links style */
+/* start document page */
+.document-square {
+  height: 500px;
+  border: 1px solid #666;
+  position: relative;
+}
+.document-square img {
+  width: 100%;
+  height: 100%;
+}
+.document-square .zoom-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #666;
+  border-radius: 0.25rem 0 0 0.25rem;
+  overflow: hidden;
+  z-index: 1;
+}
+.document-square .zoom-icons i {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  background-color: #e0e0e0;
+}
+.document-square .zoom-icons i:hover {
+  background-color: #f0f0f0;
+}
+
+.document-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.document-buttons button {
+  width: 32%;
+}
+
+/* end document page */
+/* start page title and header */
+.header h1 {
+  border-radius: 1.5rem;
+}
+
+.page-header {
+  text-align: center;
+}
+.page-header h2 {
+  background-color: #ee9e29;
+  color: #000;
+  display: inline-block;
+  padding: 0.75rem 5rem;
+  border-radius: 1rem;
+  border: 1px solid #b58d5a;
+}
+.page-header h2 a {
+  color: #000;
+}
+
+/* end page title and header */
+/* start admin page */
+.row-title {
+  height: 38px;
+  border-radius: 0.25rem;
+  text-align: center;
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 38px;
+}
+
+@media (max-width: 768px) {
+  .row-card {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+  }
+  .row-card button,
+.row-card input {
+    margin-top: 0.5rem;
+  }
+}
+/* end admin page */
+/* start table */
+table th {
+  color: #dc3545;
+  vertical-align: middle;
+}
+table td {
+  color: #311ae3 !important;
+  vertical-align: middle;
+}
+
+/* end table */
+/* start translation icon */
+i.translation-icon {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  font-size: 2.5rem;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+i.translation-icon:hover {
+  color: #311ae3;
+}
+
+/* end translation icon */
+/*# sourceMappingURL=style.css.map */
